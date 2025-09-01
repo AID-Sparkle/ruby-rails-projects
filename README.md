@@ -46,8 +46,8 @@ http://54.221.64.0:8000/
 
 ```bash
 # リポジトリをクローン
-git clone https://github.com/ユーザー名/リポジトリ名.git
-cd リポジトリ名
+git clone https://github.com/AID-Sparkle/ruby-rails-projects.git
+cd ruby-rails-projects
 
 # 依存関係をインストール
 bundle install

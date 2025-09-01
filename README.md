@@ -1,24 +1,59 @@
-# README
+# Q&Aアプリ (MVP)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails 学習用に作成した Q&A アプリの MVP です。  
+ユーザー認証やデザインは実装せず、**必要最低限の機能**だけを備えています。  
 
-Things you may want to cover:
+---
 
-* Ruby version:3.3.6
+## ✨ 機能概要
 
-* System dependencies
+### 質問
+- タイトル・名前・内容を入力して質問を登録可能  
+- 質問の **作成 / 更新 / 削除** が可能  
+- 登録された質問には、複数の回答を付けることが可能  
 
-* Configuration
+### 回答
+- 名前と回答内容を入力して回答を登録可能  
+- 回答の **作成 / 削除** が可能（更新は不可）  
 
-* Database creation
+### 一覧表示
+- 質問の一覧表示機能  
+- 各質問に紐づく回答の一覧表示機能  
 
-* Database initialization
+---
 
-* How to run the test suite
+## ⚙️ 開発環境
 
-* Services (job queues, cache servers, search engines, etc.)
+- OS: **Ubuntu 24.04 LTS (ローカル)**
+- 言語: **Ruby 3.3.6**
+- フレームワーク: **Rails 8.0.0**
+- データベース: **SQLite3**
+- バージョン管理: **Git / GitHub**
+- デプロイ想定: **AWS EC2**
 
-* Deployment instructions
+---
 
-* ...
+## 🚀 デプロイ先 (予定)
+
+AWS EC2 上で動作予定です。  
+（普段はサーバーを停止しているためアクセス不可）
+
+http://54.221.64.0:8000/
+
+---
+
+## 📦 セットアップ手順 (ローカル環境)
+
+```bash
+# リポジトリをクローン
+git clone https://github.com/ユーザー名/リポジトリ名.git
+cd リポジトリ名
+
+# 依存関係をインストール
+bundle install
+
+# データベースをセットアップ
+rails db:create db:migrate
+
+# サーバーを起動
+bin/rails server
